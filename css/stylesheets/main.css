@@ -1,0 +1,71 @@
+/*
+Error: Undefined variable: "$width__max".
+        on line 6 of C:/Users/elise/Documents/GitHub/portfolio/css/sass/main.scss
+
+1: /* ---------->>> Main <<<-----------*\/ 
+2: .page {
+3: 	box-sizing: border-box;
+4: 	padding: 1em;
+5: 	line-height: 1.5em;
+6: 	max-width: $width__max;
+7: }
+8: .page__title {
+9: 	font-size: 1.5em;
+10: 	line-height: 2em;
+11: 	color: $color__primary;
+
+Backtrace:
+C:/Users/elise/Documents/GitHub/portfolio/css/sass/main.scss:6
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:252:in `on_change'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:290:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:297:in `start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$width__max\".\A         on line 6 of C:/Users/elise/Documents/GitHub/portfolio/css/sass/main.scss\A \A 1: /* ---------->>> Main <<<-----------*/ \A 2: .page {\A 3: 	box-sizing: border-box;\A 4: 	padding: 1em;\A 5: 	line-height: 1.5em;\A 6: 	max-width: $width__max;\A 7: }\A 8: .page__title {\A 9: 	font-size: 1.5em;\A 10: 	line-height: 2em;\A 11: 	color: $color__primary;"; }

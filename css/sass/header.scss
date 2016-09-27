@@ -1,0 +1,49 @@
+/* ---------->>> HEADER <<<-----------*/ 
+.contact {
+  	text-align: center;
+  	@include break($width__break){
+  		text-align: right;
+    	margin: auto auto 1em auto;
+  	}
+}
+.contact__img {
+	width: 3em;
+  	border-radius: 50%;
+  	@include transition(opacity .25s);
+}
+.contact__img:hover {
+	opacity: .7;
+}
+.contact__link {
+	margin: .25em;
+	@include break($width__break){
+		margin: 0 1em 0 0;
+	}
+}
+.container--title, .contact {
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 1em;
+	max-width: $width__max;
+}
+.header {
+	margin: 0;
+	text-align: center;
+	@include break($width__break){
+		text-align: left;
+	}
+}
+.header__subtitle, .header__title {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.header__subtitle {
+	font-size: 1.5em;
+	text-transform: lowercase;
+}
+.header__title {
+	font-size: 3em;
+	color: $color__primary;
+	text-transform: uppercase;
+}

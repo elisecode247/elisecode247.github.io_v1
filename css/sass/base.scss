@@ -1,0 +1,52 @@
+@import "mixins";
+/* ---------->>> VARIABLES <<<-----------*/ 
+$width__max:1024px;
+$width__break: 720px;
+
+$color__background:white;
+$color__primary:#BB1E18;
+$color__text:#0B0B4A;
+
+$font__sans-serif:Roboto,Arial,sans-serif;
+
+/* ---------->>> GLOBAL <<<-----------*/ 
+body {
+	color: $color__text;
+	background-color: $color__background;
+	font-family: $font__sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: $color__background;
+}
+p a {
+	text-decoration: none;
+	border-bottom: 0px solid transparent;
+	font-weight: bold;
+	color: $color__text;
+	@include transition(border-bottom .5s, color .5s)
+}
+p a:hover {
+	color: lighten($color__text, 20%);
+	border-bottom: 1px solid lighten($color__text, 20%);
+}
+.screen-reader-text { 
+	clip: rect(1px, 1px, 1px, 1px); 
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden; 
+	position: absolute !important;
+}
+/* ---------->>> ANIMATION <<<-----------*/ 
+@include keyframes(fadeIn){
+	from {@include opacity(0)} 
+	to {@include opacity(1)}
+}
+.fade-in {
+	@include opacity(0);
+	@include animation(fadeIn 1s);
+	@include animation-fill-mode(forwards);
+}
+.fade-in--two {
+	@include animation-delay(.5s);
+}
+

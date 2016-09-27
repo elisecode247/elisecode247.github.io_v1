@@ -1,0 +1,255 @@
+/* ---------->>> VARIABLES <<<-----------*/
+/* ---------->>> GLOBAL <<<-----------*/
+/* line 13, ../sass/base.scss */
+body {
+  color: #0B0B4A;
+  background-color: white;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* line 21, ../sass/base.scss */
+p a {
+  text-decoration: none;
+  border-bottom: 0px solid transparent;
+  font-weight: bold;
+  color: #0B0B4A;
+  -moz-transition: border-bottom 0.5s, color 0.5s;
+  -o-transition: border-bottom 0.5s, color 0.5s;
+  -webkit-transition: border-bottom 0.5s, color 0.5s;
+  transition: border-bottom 0.5s, color 0.5s;
+}
+
+/* line 28, ../sass/base.scss */
+p a:hover {
+  color: #1818a3;
+  border-bottom: 1px solid #1818a3;
+}
+
+/* line 32, ../sass/base.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
+
+/* ---------->>> ANIMATION <<<-----------*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 44, ../sass/base.scss */
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -animation-fill-mode: forwards;
+}
+
+/* line 49, ../sass/base.scss */
+.fade-in--two {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* ---------->>> HEADER <<<-----------*/
+/* line 2, ../sass/header.scss */
+.contact {
+  text-align: center;
+}
+@media (min-width: 720px) {
+  /* line 2, ../sass/header.scss */
+  .contact {
+    text-align: right;
+    margin: auto auto 1em auto;
+  }
+}
+
+/* line 9, ../sass/header.scss */
+.contact__img {
+  width: 3em;
+  border-radius: 50%;
+  -moz-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+/* line 14, ../sass/header.scss */
+.contact__img:hover {
+  opacity: .7;
+}
+
+/* line 17, ../sass/header.scss */
+.contact__link {
+  margin: .25em;
+}
+@media (min-width: 720px) {
+  /* line 17, ../sass/header.scss */
+  .contact__link {
+    margin: 0 1em 0 0;
+  }
+}
+
+/* line 23, ../sass/header.scss */
+.container--title, .contact {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1em;
+  max-width: 1024px;
+}
+
+/* line 29, ../sass/header.scss */
+.header {
+  margin: 0;
+  text-align: center;
+}
+@media (min-width: 720px) {
+  /* line 29, ../sass/header.scss */
+  .header {
+    text-align: left;
+  }
+}
+
+/* line 36, ../sass/header.scss */
+.header__subtitle, .header__title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, ../sass/header.scss */
+.header__subtitle {
+  font-size: 1.5em;
+  text-transform: lowercase;
+}
+
+/* line 45, ../sass/header.scss */
+.header__title {
+  font-size: 3em;
+  color: #BB1E18;
+  text-transform: uppercase;
+}
+
+/* ---------->>> Main <<<-----------*/
+/* line 2, ../sass/main.scss */
+.page {
+  box-sizing: border-box;
+  padding: 1em;
+  line-height: 1.5em;
+  max-width: 1024px;
+}
+
+/* line 8, ../sass/main.scss */
+.page__title {
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #BB1E18;
+  text-transform: uppercase;
+}
+@media (min-width: 720px) {
+  /* line 8, ../sass/main.scss */
+  .page__title {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    line-height: 1em;
+  }
+}
+
+@media (min-width: 720px) {
+  /* line 20, ../sass/main.scss */
+  .page__text, .projects {
+    display: inline-block;
+    width: 79%;
+    vertical-align: top;
+  }
+}
+
+/* line 27, ../sass/main.scss */
+.page__text p {
+  margin: 0 auto 1em auto;
+}
+
+/* line 30, ../sass/main.scss */
+.page, .page__text, .page__title,
+.project__description, .project__title {
+  margin: 0 auto;
+}
+
+/* line 34, ../sass/main.scss */
+.codepen {
+  width: 100%;
+  max-width: 1024px;
+}
+
+/* line 1, ../sass/buttons.scss */
+.up__img {
+  display: block;
+  border: 0;
+  border-radius: 50%;
+  margin: auto;
+  width: 3em;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+@media (min-width: 720px) {
+  /* line 1, ../sass/buttons.scss */
+  .up__img {
+    display: inherit;
+    width: 5em;
+    margin: 0;
+  }
+}
+
+/* line 14, ../sass/buttons.scss */
+.up__img:hover {
+  opacity: .7;
+}

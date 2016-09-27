@@ -1,0 +1,48 @@
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+	-moz-animation: #{$str};
+	-ms-animation: #{$str};
+	-o-animation: #{$str};
+	animation: #{$str};      
+}
+@mixin animation-delay($str){
+    -webkit-animation-delay: $str;
+    animation-delay: ($str);
+}
+@mixin animation-fill-mode($str){
+	-webkit-animation-fill-mode: $str;
+    -moz-animation-fill-mode: $str;
+	-animation-fill-mode: ($str);
+}
+@mixin break($str){
+    @media (min-width: $str){
+        @content;
+    }
+}
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+}
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
