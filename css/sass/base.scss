@@ -15,3 +15,14 @@ $font__sans-serif: Raleway,Roboto,Arial,sans-serif;
 	overflow: hidden; 
 	position: absolute !important;
 }
+
+@include keyframes(fadeIn){
+	from {@include opacity(0)} 
+	to {@include opacity(1)}
+}
+
+.fadeIn {
+	@include opacity(0);
+	animation: fadeIn 3s;
+	@include animation-fill-mode(forwards);
+}

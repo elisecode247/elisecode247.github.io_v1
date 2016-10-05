@@ -5,7 +5,9 @@ var gulp = require('gulp'),
 	compass = require('gulp-compass'),
 	browserify = require('gulp-browserify'),
 	path = require('path'),
-	connect = require('gulp-connect');
+	connect = require('gulp-connect'),
+	uglify = require('gulp-uglify'),
+	pump = require('pump');
 
 var jsSources = [];
 
@@ -45,7 +47,6 @@ gulp.task('html', function () {
 });
 
 
-
 gulp.task('connect', function(){
 	connect.server({
 		livereload: true,
@@ -54,5 +55,10 @@ gulp.task('connect', function(){
 	})
 })
 
+gulp.task('compress', function () {
+	return gulp.src('javascript/*.js')
+	.pipe(uglify())
+	.pipe(gulp.dest('javascript_uglified'))
+});
 
 gulp.task('default', ['connect', 'watch'])

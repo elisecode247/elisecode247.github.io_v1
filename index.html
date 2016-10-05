@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Elise Straub's web development portfolio. This website was created using Gulp, SASS, JQuery and FullPage.js.">
-	<meta name="keywords" content="HTML,CSS,JavaScript">
-	<meta name="author" content="Elise Straub">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Elise Straub's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Elise Straub's web development portfolio. This website was created using Gulp, SASS, JQuery and FullPage.js.">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Elise Straub">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elise Straub's Portfolio</title>
 </head>
-<body>
-<div id="fullpage" itemscope itemtype="http://schema.org/Person">
-	<header class="section">
-		<div class="header__heading">
-			<h1>Elise Straub</h1>
-			<p> web developer</p>
-		</div>
-		<div class="header__links">
-			<a href="#carouselPage">Projects</a>
-			<a href="#aboutPage">Hire</a>
-		</div>
-	</header>
-	<article class="carousel section" data-anchor="carouselPage">
-		<div class="slide">
-			<h2>Three <br/> Featured Projects</h2>
-			<p>&#129152; scroll left and right &#129154;</p><br/><br/>
-		</div>
-		<div class="slide">
-			<img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
-			<h3 class="project__title">Retro Game</h3>
-			<p>Created using ReactJS and Sass</p>
-			<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy/">CodePen</a></p>
-		</div>
-		<div class="slide">
-			<img class="project__image" src="img/heatmap.gif" alt="Game Screenshot" />
-			<h3 class="project__title">Heat Map</h3>
-			<p>Created using D3.js and Sass</p>
-			<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/ZOgALQ/">CodePen</a></p>
-		</div>
-		<div class="slide">
-			<img class="project__image" src="img/tictactoe.gif" alt="Game Screenshot" />
-			<h3 class="project__title">Tic Tac Toe</h3>
-			<p>Created using Angular 2, Bootstrap, jQuery, and a recursive algorithm</p>
-			<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/KVXYbj/">CodePen</a></p>
-			</div>
-	</article>
-	<article class="about section" id="about" data-anchor="aboutPage">
-	<h2 class="screen-reader-text">About</h2>
-		<p class="about__paragraph--one">Hello,</p>
-		<p>My name is <strong itemprop="name">Elise Straub</strong>, and I'm a <strong itemprop="jobTitle">web developer</strong> living in <span itemprop="homeLocation"> Washington, D.C. </span> and specializing in <strong>front-end</strong> development. My <strong> skills </strong> include HTML5, CSS3, JavaScript, JQuery, SASS, React, and D3. </p>
-		<p>See all my front-end projects on <a href="http://codepen.io/elisecode247/" itemprop="url">CodePen,</a> my full-stack projects on <a href="https://github.com/elisecode247/" itemprop="url">GitHub,</a> and my learning path on <a href="https://www.freecodecamp.com/elisecode247/" itemprop="url">FreeCodeCamp.</a></p>
-		<p>I am currently available for <span itemprop="seeks">full-time positions</span>. Want to hire me? I’d love to hear from you. <a id="email" itemprop="email">Email</a> me at "elisecode247 at gmail dot com", call me at <a href="tel:202-930-2165" itemprop="telephone">202-930-2165</a>. You can also view my <a href="https://www.linkedin.com/in/elisestraub/" itemprop="url">LinkedIn</a> profile or download a copy of my <a href="assets/elisestraubresume.pdf" download="elisestraubresume">resume</a>.</p>
-		<p>Thank you for visiting!</p>
-		<img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
-	</article>
-</div>
-<link rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" />
-<link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter|Raleway">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="javascript/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="javascript/jquery.fullPage.js"></script>
-<script>
-$(document).ready(function() {
-	var myEmail = "elisecode247";
-$('#fullpage').fullpage({
-    anchors:['homePage', 'carouselPage', 'aboutPage']
-});
-$('#email').attr('href', 'mailto:' + myEmail + '@gmail.com');
-});
-</script>
+<body class="fadeIn">
+  <div id="fullpage" itemscope itemtype="http://schema.org/Person">
+    <header class="section">
+      <div class="header__heading">
+        <h1 class="fadeIn">Elise Straub</h1>
+        <p class="fadeIn"> web developer</p>
+      </div>
+      <div class="header__links">
+        <a href="#carouselPage">Projects</a>
+        <a href="#aboutPage">Hire</a>
+      </div>
+    </header>
+    <article class="carousel section" data-anchor="carouselPage">
+      <div class="slide">
+        <h2>Three <br/> Featured Projects</h2>
+        <p>&#129152; scroll left and right &#129154;</p><br/><br/>
+      </div>
+      <div class="slide">
+        <img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
+        <h3 class="project__title">Retro Game</h3>
+        <p>Created using ReactJS and Sass</p>
+        <p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy/">CodePen</a></p>
+      </div>
+      <div class="slide">
+        <img class="project__image" src="img/heatmap.gif" alt="Game Screenshot" />
+        <h3 class="project__title">Heat Map</h3>
+        <p>Created using D3.js and Sass</p>
+        <p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/ZOgALQ/">CodePen</a></p>
+      </div>
+      <div class="slide">
+        <img class="project__image" src="img/tictactoe.gif" alt="Game Screenshot" />
+        <h3 class="project__title">Tic Tac Toe</h3>
+        <p>Created using Angular 2, Bootstrap, jQuery, and a recursive algorithm</p>
+        <p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/KVXYbj/">CodePen</a></p>
+      </div>
+    </article>
+    <article class="about section" id="about" data-anchor="aboutPage">
+      <h2 class="screen-reader-text">About</h2>
+      <p class="about__paragraph--one">Hello,</p>
+      <p>My name is <strong itemprop="name">Elise Straub</strong>, and I'm a <strong itemprop="jobTitle">web developer</strong> living in <span itemprop="homeLocation"> Washington, D.C. </span> and specializing in <strong>front-end</strong> development.
+        My <strong> skills </strong> include HTML5, CSS3, JavaScript, JQuery, SASS, React, and D3. </p>
+      <p>See all my front-end projects on <a href="http://codepen.io/elisecode247/" itemprop="url">CodePen,</a> my full-stack projects on <a href="https://github.com/elisecode247/" itemprop="url">GitHub,</a> and my learning path on <a href="https://www.freecodecamp.com/elisecode247/"
+          itemprop="url">FreeCodeCamp.</a></p>
+      <p>I am currently available for <span itemprop="seeks">full-time positions</span>. Want to hire me? I’d love to hear from you. <a id="email" itemprop="email">Email</a> me at "elisecode247 at gmail dot com", call me at <a href="tel:2029302165" itemprop="telephone">202-930-2165</a>.
+        You can also view my <a href="https://www.linkedin.com/in/elisestraub/" itemprop="url">LinkedIn</a> profile or download a copy of my <a href="assets/elisestraubresume.pdf" download="elisestraubresume">resume</a>.</p>
+      <p>Thank you for visiting!</p>
+      <img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
+    </article>
+  </div>
+  <link rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter|Raleway">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript_uglified/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="javascript_uglified/jquery.fullPage.js"></script>
+  <script>
+    $(document).ready(function() {
+    		var myEmail = "elisecode247";
+    		$('#fullpage').fullpage({
+    	    anchors:['homePage', 'carouselPage', 'aboutPage']
+    	});
+    	$('#email').attr('href', 'mailto:' + myEmail + '@gmail.com');
+    	});
+  </script>
 </body>
 </html>

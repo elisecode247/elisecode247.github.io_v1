@@ -1,6 +1,7 @@
 /* ---------->>> HEADER <<<-----------*/ 
 
 header {
+	position: relative;
 	background-color: $color__text;
 	background: url("../../img/asanoha.png") 0 0 repeat;
 	animation: 15s linear 0s normal none infinite animate;
@@ -36,7 +37,7 @@ header {
 		@include break(650px){
 			display: inherit;
 			position: absolute;
-			bottom: 5%;
+			bottom: 15%;
 			right: -12px;
 			a {
 				display: inherit;
