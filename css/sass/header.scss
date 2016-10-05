@@ -2,36 +2,54 @@
 
 header {
 	background-color: $color__text;
-	color: $color__background;
+	background: url("../../img/asanoha.png") 0 0 repeat;
+	animation: 15s linear 0s normal none infinite animate;
+	@include keyframes(animate) {
+		from {background-position:0 0;}
+		to {background-position: 0 347px;}
+	}
 	.header__heading {
 		position: absolute;
 		margin-left: 2em;
 		top: 25%;
 		height: 50%;
+		font-family: $font__serif;
+		color: $color__primary--darker;
+		animation: 10s linear 0s normal none infinite colorshift;
+		@include keyframes(colorshift) {
+			0% {color:$color__primary--darker;}
+			50% {color:$color__primary;}
+			60% {color:$color__primary;}
+			90% {color:$color__primary--darker;}
+			}
 		h1 {
-			font-family: $font__serif;
-			color: $color__primary;
 			@include responsive-font(10vh, 48px);
 			margin: 0;
 		}
 		p {
-			font-family: $font__sans-serif;
-			color: $color__primary;
 			@include responsive-font(5vh, 24px);
 			margin: 0;
 		}	
 	}
-
-	button {
-		background-color: $color__accent;
-		color: $color__background;
-		border: 3px solid $color__background;
-		border-radius: 12px;
-		font-family: $font__serif;
-		@include responsive-font(10vh, 48px);
-		position: absolute;
-		right: -15px;
-		top: 75%;
-		padding: 0 2em 0 1em;
+	.header__links {
+		display: none;
+		@include break(650px){
+			display: inherit;
+			position: absolute;
+			bottom: 5%;
+			right: -12px;
+			a {
+				display: inherit;
+				opacity: .5;
+				text-decoration: none;
+				background-color: $color__accent;
+				color: $color__background;
+				border: 3px solid $color__background;
+				border-radius: 12px;
+				font-family: $font__serif;
+				@include responsive-font(7vh, 48px);
+				padding: 0 2em 0 1em;
+			}
+		}
 	}
 }

@@ -17,17 +17,129 @@ body {
 /* ---------->>> HEADER <<<-----------*/
 header {
   background-color: #333333;
-  color: #F2F2F2;
+  background: url("../../img/asanoha.png") 0 0 repeat;
+  animation: 15s linear 0s normal none infinite animate;
+}
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 347px;
+  }
+}
+@-moz-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 347px;
+  }
+}
+@-ms-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 347px;
+  }
+}
+@-o-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 347px;
+  }
+}
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 347px;
+  }
 }
 header .header__heading {
   position: absolute;
   margin-left: 2em;
   top: 25%;
   height: 50%;
+  font-family: Bitter, Century, Georgia, Times, serif;
+  color: #5171A5;
+  animation: 10s linear 0s normal none infinite colorshift;
+}
+@-webkit-keyframes colorshift {
+  0% {
+    color: #5171A5;
+  }
+  50% {
+    color: #B4D3DA;
+  }
+  60% {
+    color: #B4D3DA;
+  }
+  90% {
+    color: #5171A5;
+  }
+}
+@-moz-keyframes colorshift {
+  0% {
+    color: #5171A5;
+  }
+  50% {
+    color: #B4D3DA;
+  }
+  60% {
+    color: #B4D3DA;
+  }
+  90% {
+    color: #5171A5;
+  }
+}
+@-ms-keyframes colorshift {
+  0% {
+    color: #5171A5;
+  }
+  50% {
+    color: #B4D3DA;
+  }
+  60% {
+    color: #B4D3DA;
+  }
+  90% {
+    color: #5171A5;
+  }
+}
+@-o-keyframes colorshift {
+  0% {
+    color: #5171A5;
+  }
+  50% {
+    color: #B4D3DA;
+  }
+  60% {
+    color: #B4D3DA;
+  }
+  90% {
+    color: #5171A5;
+  }
+}
+@keyframes colorshift {
+  0% {
+    color: #5171A5;
+  }
+  50% {
+    color: #B4D3DA;
+  }
+  60% {
+    color: #B4D3DA;
+  }
+  90% {
+    color: #5171A5;
+  }
 }
 header .header__heading h1 {
-  font-family: Bitter, Century, Georgia, Times, serif;
-  color: #B4D3DA;
   font-size: 10vh;
   margin: 0;
 }
@@ -37,8 +149,6 @@ header .header__heading h1 {
   }
 }
 header .header__heading p {
-  font-family: Raleway, Roboto, Arial, sans-serif;
-  color: #B4D3DA;
   font-size: 5vh;
   margin: 0;
 }
@@ -47,66 +157,87 @@ header .header__heading p {
     font-size: 24px;
   }
 }
-header button {
-  background-color: #BA2C73;
-  color: #F2F2F2;
-  border: 3px solid #F2F2F2;
-  border-radius: 12px;
-  font-family: Bitter, Century, Georgia, Times, serif;
-  font-size: 10vh;
-  position: absolute;
-  right: -15px;
-  top: 75%;
-  padding: 0 2em 0 1em;
+header .header__links {
+  display: none;
 }
-@media (max-height: 480px) {
-  header button {
+@media (min-width: 650px) {
+  header .header__links {
+    display: inherit;
+    position: absolute;
+    bottom: 5%;
+    right: -12px;
+  }
+  header .header__links a {
+    display: inherit;
+    opacity: .5;
+    text-decoration: none;
+    background-color: #BA2C73;
+    color: #F2F2F2;
+    border: 3px solid #F2F2F2;
+    border-radius: 12px;
+    font-family: Bitter, Century, Georgia, Times, serif;
+    font-size: 7vh;
+    padding: 0 2em 0 1em;
+  }
+}
+@media (min-width: 650px) and (max-height: 685.71429px) {
+  header .header__links a {
     font-size: 48px;
   }
 }
 
-/* .carousel {
-	width: 100%;
-	background-color: $color__background;
-	margin: 0;
-	.project {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 2em 1em;
-		text-align: center;
-		border-bottom: 3px solid $color__primary; 
-		.project__title {
-			font-family: $font__serif;
-			font-size: em(24);
-			color: $color__primary--darker;
-		}
-		.project__image {
-			max-width: 100%;
-			height: auto;
-			border: 3px solid $color__primary;
-			border-radius: 20px;
-		}
-		.project__description {
-			font-family: $font__sans-serif;
-			font-size: em(18);
-			color: $color__text;
-		}
-	}
+/* ---------->>> CAROUSEL <<<-----------*/
+.project {
+  padding: 2em 1em;
+  text-align: center;
+  border-bottom: 3px solid #B4D3DA;
+  background-color: #F2F2F2;
+}
+.project h2 {
+  font-family: Bitter, Century, Georgia, Times, serif;
+  font-size: 2.5em;
+  color: #5171A5;
+  padding: 0 1em;
+  margin: 0;
+  line-height: 1em;
+}
+.project .project__title {
+  font-family: Bitter, Century, Georgia, Times, serif;
+  font-size: 4vh;
+  color: #5171A5;
+  margin: .5em auto;
+}
+@media (max-height: 450px) {
+  .project .project__title {
+    font-size: 18px;
+  }
+}
+.project .project__image {
+  max-width: 90%;
+  border: 3px solid #B4D3DA;
+  border-radius: 20px;
+}
+.project .project__description {
+  font-family: Raleway, Roboto, Arial, sans-serif;
+  font-size: 3vh;
+  color: #333333;
+  margin: auto 1.5em;
+}
+@media (max-height: 600px) {
+  .project .project__description {
+    font-size: 18px;
+  }
+}
+.project .project__link {
+  font-style: italic;
+}
+.project .project__link a {
+  color: #5171A5;
+  text-decoration: none;
 }
 
-*/
-.slide {
-  background-color: #F2F2F2;
-  text-align: center;
-}
-.slide img {
-  max-width: 100%;
-  max-height: 500px;
-  margin: 0 auto;
-}
-.slide h2 {
-  font-family: Bitter, Century, Georgia, Times, serif;
-  font-size: 3em;
+.fp-controlArrow {
+  opacity: .5;
 }
 
 .fp-controlArrow.fp-next {
@@ -117,21 +248,21 @@ header button {
   border-color: transparent #BA2C73 transparent transparent;
 }
 
+.iScrollIndicator {
+  visibility: hidden;
+}
+
 .about {
   background-color: white;
   font-family: Raleway, Roboto, Arial, sans-serif;
-  font-size: 2vh;
-  padding: 0 1.5em;
-  line-height: 1.25em;
+  font-size: 1.5em;
+  padding: 1.5em;
+  line-height: 1.5em;
 }
-@media (max-height: 800px) {
+@media (min-width: 900px) {
   .about {
-    font-size: 16px;
+    padding: 0 4em;
   }
-}
-.about h2 {
-  margin: 0;
-  padding: 0;
 }
 .about a {
   font-style: italic;
@@ -143,17 +274,16 @@ header button {
 }
 .about .about__paragraph--one {
   color: #BA2C73;
+  font-family: Bitter, Century, Georgia, Times, serif;
+  font-size: 3em;
+  line-height: 0em;
 }
 .about .about__headshot {
   display: none;
-}
-@media (min-width: 500px) {
-  .about .about__headshot {
-    display: inherit;
-    border: 3px solid #B4D3DA;
-    border-radius: 50%;
-    width: 30%;
-    max-width: 400px;
-    height: auto;
-  }
+  display: inherit;
+  border: 3px solid #B4D3DA;
+  border-radius: 50%;
+  width: 30%;
+  max-width: 150px;
+  height: auto;
 }

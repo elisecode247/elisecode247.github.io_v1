@@ -1,13 +1,12 @@
 .about {
 	background-color: white;
 	font-family: $font__sans-serif;
-	@include responsive-font(2vh, 16px);
-	padding: 0 1.5em;
-	line-height: 1.25em;
-	h2 {
-		margin: 0;
-		padding: 0;
+	font-size: 1.5em;
+	padding:1.5em;
+	@include break(900px){
+		padding: 0 4em;
 	}
+	line-height: 1.5em;
 	a {
 		font-style: italic;
 		color: $color__accent;
@@ -18,17 +17,18 @@
 	}
 	.about__paragraph--one {
 		color: $color__accent;
+		font-family: $font__serif;
+		font-size: 3em;
+		line-height: 0em;
 	}
 	.about__headshot {
 		display: none;
-		@include break(500px){
 		display: inherit;
 		border: 3px solid $color__primary;
 		border-radius: 50%;
 		width: 30%;
-		max-width: 400px;
+		max-width: 150px;
 		height: auto;
-		}
 	}
 }
 

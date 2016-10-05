@@ -8,58 +8,64 @@
 <body>
 <main id="fullpage">
 	<header class="section">
-	<div class="header__heading">
-	<h1>Elise Straub</h1>
-	<p> web developer</p>
-	</div>
-	<a href="#about"><button>Hire</button></a>
+		<div class="header__heading">
+		<h1>Elise Straub</h1>
+		<p> web developer</p>
+		</div>
+		<div class="header__links">
+		<a href="#carouselPage">Projects</a>
+		<a href="#aboutPage">Hire</a>
+		</div>
 	</header>
-<article class="carousel section">
-	<div class="slide"><h2>Projects</h2></div>
-	<div class="slide">
-		<img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
-		<h3 class="project__title">Retro Game</h3>
-		<p class="project__description">A Rogue-like game using ReactJs.</p>
-		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
-	</div>
-	<div class="project slide">
-		<img class="project__image" src="img/heatmap.gif" alt="Game Screenshot" />
-		<h3 class="project__title">Heat Map</h3>
-		<p class="project__description">A Rogue-like game using ReactJs.</p>
-		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
-	</div>
-	<div class="project slide">
-		<img class="project__image" src="img/tictactoe.gif" alt="Game Screenshot" />
-		<h3 class="project__title">Tic Tac Toe</h3>
-		<p class="project__description">A Rogue-like game using ReactJs.</p>
-		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
-	</div>		
-</article>
-<article class="about section" id="about">
-<h2 class="screen-reader-text">About</h2>
-	<p class="about__paragraph--one">Hello,</p>
-	<p>My name is <strong>Elise Straub</strong> from Washington, D.C., and I'm a <strong>web developer</strong> specializing in <strong>front-end</strong> development. My <strong>skills</strong> include HTML5, CSS3, JavaScript, JQuery, SASS, React, and D3. </p>
-	<p>See my front-end projects at <a href="#">CodePen,</a> my full-stack projects on <a href="#">GitHub,</a> and my learning path on <a href="#">FreeCodeCamp.</a></p>
-	<p>I am currently available for full-time positions. Want to hire me? I’d love to hear from you. <a href="#">Email</a> me, call my <a href="#">cellphone,</a> or check out my <a href="#">LinkedIn</a> profile.  Download a copy of my <a href="#">resume</a> if you need that too.</p>
-	<p>Thank you for visiting!</p>
-	<img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
-</article>
+	<article class="carousel section">
+		<div class="project slide">
+		<h2>Three<br/>Featured Projects</h2>
+		<p>&#129152; scroll left and right &#129154;</p><br/><br/>
+		</div>
+		<div class="project slide">
+			<img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
+			<h3 class="project__title">Retro Game</h3>
+			<div class="project__description"><p>Created using ReactJS and Sass</p>
+			<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a></p>
+			</div>
+		</div>
+		<div class="project slide">
+			<img class="project__image" src="img/heatmap.gif" alt="Game Screenshot" />
+			<h3 class="project__title">Heat Map</h3>
+			<div class="project__description">
+			<p>Created using D3.js and Sass</p>
+			<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/ZOgALQ">CodePen</a></p>
+			</div>
+		</div>
+		<div class="project slide ">
+			<img class="project__image" src="img/tictactoe.gif" alt="Game Screenshot" />
+			<h3 class="project__title">Tic Tac Toe</h3>
+			<div class="project__description">
+			<p>Created using Angular 2, Bootstrap, jQuery, and a recursive algorithm</p>
+			<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/KVXYbj">CodePen</a></p></div>
+		</div>		
+	</article>
+	<article class="about section" id="about" data-anchor="aboutPage">
+	<h2 class="screen-reader-text">About</h2>
+		<p class="about__paragraph--one">Hello,</p>
+		<p>My name is <strong>Elise Straub</strong>, and I'm a <strong>web developer</strong> living in Washington, D.C. and specializing in <strong>front-end</strong> development. My <strong> skills </strong> include HTML5, CSS3, JavaScript, JQuery, SASS, React, and D3. </p>
+		<p>See all my front-end projects on <a href="http://codepen.io/elisecode247/">CodePen,</a> my full-stack projects on <a href="https://github.com/elisecode247/">GitHub,</a> and my learning path on <a href="https://www.freecodecamp.com/elisecode247">FreeCodeCamp.</a></p>
+		<p>I am currently available for full-time positions. Want to hire me? I’d love to hear from you. <a id="email">Email</a> me at "elisecode247 at gmail dot com", call me at <a href="tel:202-930-2165">202-930-2165</a>. You can also view my <a href="https://www.linkedin.com/in/elisestraub">LinkedIn</a> profile or download a copy of my <a href="assets/elisestraubresume.pdf" download="elisestraubresume">resume</a> if you need that too.</p>
+		<p>Thank you for visiting!</p>
+		<img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
+	</article>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-<script src="javascript/jquery.easings.min.js"></script>
-
-
-<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
 <script type="text/javascript" src="javascript/scrolloverflow.min.js"></script>
-
 <script type="text/javascript" src="javascript/jquery.fullPage.js"></script>
-
 <script>
 	$(document).ready(function() {
-    $('#fullpage').fullpage();
+		var myEmail = "elisecode247";
+    $('#fullpage').fullpage({
+        anchors:['homePage', 'carouselPage', 'aboutPage']
+    });
+    $('#email').attr('href', 'mailto:' + myEmail + '@gmail.com');
 });
-
 </script>
 </body>
 </html>
