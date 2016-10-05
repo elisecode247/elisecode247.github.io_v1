@@ -57,20 +57,35 @@
       <img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
     </article>
   </div>
-  <link rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter|Raleway">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascript_uglified/scrolloverflow.min.js"></script>
-  <script type="text/javascript" src="javascript_uglified/jquery.fullPage.js"></script>
-  <script>
-    $(document).ready(function() {
-    		var myEmail = "elisecode247";
-    		$('#fullpage').fullpage({
-    	    anchors:['homePage', 'carouselPage', 'aboutPage']
-    	});
-    	$('#email').attr('href', 'mailto:' + myEmail + '@gmail.com');
-    	});
-  </script>
+	<noscript id="deferred-styles">
+		<link rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter%7CRaleway">
+	</noscript>
+	<script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript_uglified/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="javascript_uglified/jquery.fullPage.js"></script>
+	<script>
+	$(document).ready(function() {
+	var myEmail = "elisecode247";
+	$('#fullpage').fullpage({
+	anchors:['homePage', 'carouselPage', 'aboutPage']
+	});
+	$('#email').attr('href', 'mailto:' + myEmail + '@gmail.com');
+	});
+	</script>
 </body>
 </html>
