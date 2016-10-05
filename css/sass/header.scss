@@ -3,46 +3,35 @@
 header {
 	background-color: $color__text;
 	color: $color__background;
-	width: 100%;
-	height: 20vh;
-	min-height: 140px;
-	position: relative;
-	overflow: hidden;
-	margin: 0;
 	.header__heading {
 		position: absolute;
-		margin-left: 1em;
+		margin-left: 2em;
 		top: 25%;
 		height: 50%;
 		h1 {
 			font-family: $font__serif;
 			color: $color__primary;
-			@include responsive-font(6vh, 48px);
+			@include responsive-font(10vh, 48px);
 			margin: 0;
 		}
 		p {
 			font-family: $font__sans-serif;
 			color: $color__primary;
-			@include responsive-font(3vh, 24px);
+			@include responsive-font(5vh, 24px);
 			margin: 0;
 		}	
 	}
 
 	button {
-		display: none;
-		@include break(600px){
-		display: inherit;
 		background-color: $color__accent;
 		color: $color__background;
 		border: 3px solid $color__background;
 		border-radius: 12px;
 		font-family: $font__serif;
-		@include responsive-font(6vh, 48px);
-		height: 50%;
+		@include responsive-font(10vh, 48px);
 		position: absolute;
 		right: -15px;
-		top: 25%;
-		padding: 0 5vw 0 0.5em;
-    	}	
+		top: 75%;
+		padding: 0 2em 0 1em;
 	}
 }

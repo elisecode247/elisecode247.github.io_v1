@@ -1,45 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Elise Straub's Portfolio</title>
+<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
-<header>
-<div class="header__heading">
-<h1>Elise Straub</h1>
-<p> web developer</p>
-</div>
-<button>Hire</button> 
-</header>
-<article class="carousel">
-	<div class="project">
+<main id="fullpage">
+	<header class="section">
+	<div class="header__heading">
+	<h1>Elise Straub</h1>
+	<p> web developer</p>
+	</div>
+	<a href="#about"><button>Hire</button></a>
+	</header>
+<article class="carousel section">
+	<div class="slide"><h2>Projects</h2></div>
+	<div class="slide">
 		<img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
-		<h2 class="project__title">Retro Game</h2>
+		<h3 class="project__title">Retro Game</h3>
 		<p class="project__description">A Rogue-like game using ReactJs.</p>
 		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
 	</div>
-	<div class="project">
+	<div class="project slide">
 		<img class="project__image" src="img/heatmap.gif" alt="Game Screenshot" />
-		<h2 class="project__title">Heat Map</h2>
+		<h3 class="project__title">Heat Map</h3>
 		<p class="project__description">A Rogue-like game using ReactJs.</p>
 		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
 	</div>
-	<div class="project">
+	<div class="project slide">
 		<img class="project__image" src="img/tictactoe.gif" alt="Game Screenshot" />
-		<h2 class="project__title">Tic Tac Toe</h2>
+		<h3 class="project__title">Tic Tac Toe</h3>
 		<p class="project__description">A Rogue-like game using ReactJs.</p>
 		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
 	</div>		
 </article>
-<article class="about">
+<article class="about section" id="about">
 <h2 class="screen-reader-text">About</h2>
 	<p class="about__paragraph--one">Hello,</p>
-	<p>My name is <strong>Elise Straub</strong> from Washington, D.C., and I’m a <strong>web developer</strong> specializing in <strong>front-end</strong> development.  I can help make your website responsive, maintainable, and up to your standards. My <strong>skills</strong> include HTML5, CSS3, JavaScript, JQuery, SASS, React, and D3. </p>
-	<p>See my front-end projects at <a href="#">CodePen,</a> my full-stack projects on <a href="#">GitHub,</a> and view my learning path on <a href="#">FreeCodeCamp.</a></p>
+	<p>My name is <strong>Elise Straub</strong> from Washington, D.C., and I'm a <strong>web developer</strong> specializing in <strong>front-end</strong> development. My <strong>skills</strong> include HTML5, CSS3, JavaScript, JQuery, SASS, React, and D3. </p>
+	<p>See my front-end projects at <a href="#">CodePen,</a> my full-stack projects on <a href="#">GitHub,</a> and my learning path on <a href="#">FreeCodeCamp.</a></p>
 	<p>I am currently available for full-time positions. Want to hire me? I’d love to hear from you. <a href="#">Email</a> me, call my <a href="#">cellphone,</a> or check out my <a href="#">LinkedIn</a> profile.  Download a copy of my <a href="#">resume</a> if you need that too.</p>
 	<p>Thank you for visiting!</p>
 	<img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
 </article>
+</main>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="node_modules/fullpage.js/vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script>
+
+<script>
+	$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+
+</script>
 </body>
 </html>
