@@ -1,59 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Elise Straub</title>
-    <meta name="description" content="Elise's Straub personal portfolio site. See a sample of her web development work.">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/stylesheets/master.css">
+	<title>Elise Straub's Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <article class="contact fade-in fade-in--two" id="contact">
-        <h2 class="screen-reader-text">Social Media Links</h2>
-            <a class="contact__link" href="http://codepen.io/elisecode247/" title="Go to Elise's CodePen page" target="_blank">
-                <img class="contact__img" src="img/codepenlogo.png" alt="github logo" /></a>
-            <a class="contact__link" href="https://github.com/elisecode247" title="Go to Elise's GitHub page" target="_blank">
-                <img class="contact__img" src="img/githublogo.png" alt="github logo" /></a>
-            <a class="contact__link" href="https://www.freecodecamp.com/elisecode247" title="Go to Elise's Free Code Camp page" target="_blank">
-                <img class="contact__img" src="img/freecodecamplogo.png" alt="freecodecamp logo" /></a>
-            <a class="contact__link" href="https://www.linkedin.com/in/elisestraub" title="Go to Elise's LinkedIn Profile" target="_blank">
-                <img class="contact__img" src="img/linkedinlogo.png" alt="linkedin logo" /></a>
-            <a class="contact__link" href="https://twitter.com/elisecode247" title="Go to Elise's Twitter page" target="_blank">
-                <img class="contact__img" src="img/twitterlogoblue.png" alt="twitter logo" /></a>
-        </article>
-        <div class="container--title">
-        <h1 class="header__title fade-in">Elise Straub</h1>
-        <p class="header__subtitle fade-in">Web Developer</p>
-        </div>
-    </header>
-    <main class="main fade-in fade-in--two">
-        <article class="page about" id="about">
-            <h2 class="page__title">About</h2>
-            <div class="page__text"><p>I am a web developer from Washington, D.C. specializing in front-end development (HTML, CSS, and JavaScript). I'm looking for a full-time position in the area. </p>
-            <p>See more of my projects at <a class="about__link" href="http://codepen.io/elisecode247/" title="Go to Elise's CodePen page" target="_blank">CodePen</a>, <a class="about__link" href="https://github.com/elisecode247" title="Go to Elise's GitHub page" target="_blank">GitHub</a>, and <a class="about__link" href="https://www.freecodecamp.com/elisecode247" title="Go to Elise's FreeCodeCamp page" target="_blank">FreeCodeCamp</a>. If you would like to get in touch with me, connect with me through <a class="about__link" href="https://twitter.com/elisecode247" title="Go to Elise's LinkedIn page" target="_blank">LinkedIn.</a></p></div>
-        </article>
-        <article class="page" id="projects">
-            <h2 class="page__title">Projects</h2>
-            <div class="projects">
-            <div class="project">
-                <p data-height="450" data-theme-id="light" data-slug-hash="yJwGLy" data-default-tab="result" data-user="elisecode247" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/elisecode247/pen/yJwGLy/">React: Roguelike Game</a> by Elise (<a href="https://codepen.io/elisecode247">@elisecode247</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div>
-            <div class="project">
-                <p data-height="450" data-theme-id="light" data-slug-hash="ZOgALQ" data-default-tab="result" data-user="elisecode247" data-embed-version="2" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/elisecode247/pen/ZOgALQ/">D3 Heat Map</a> by Elise (<a href="https://codepen.io/elisecode247">@elisecode247</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div>
-            <div class="project">
-                <p data-height="450" data-theme-id="light" data-slug-hash="meymab" data-default-tab="result" data-user="elisecode247" data-embed-version="2" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/elisecode247/pen/meymab/">Zipline: Pomodoro Timer</a> by Elise (<a href="https://codepen.io/elisecode247">@elisecode247</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div>
-            <div class="project">
-                <p data-height="450" data-theme-id="light" data-slug-hash="GZvGLM" data-default-tab="result" data-user="elisecode247" data-embed-version="2" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/elisecode247/pen/GZvGLM/"> React: Camper Leaderboard</a> by Elise (<a href="https://codepen.io/elisecode247">@elisecode247</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div>
-            </div>
-        </article>
-        <div class="page">
-        <a class="up__link" href="#" title="Scroll up to top of page"><img class="up__img" src="img/scrollup.png" alt="up arrow" /></a></div>
-    </main>
-    <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
+<header>
+<div class="header__heading">
+<h1>Elise Straub</h1>
+<p> web developer</p>
+</div>
+<button>Hire</button> 
+</header>
+<article class="carousel">
+	<div class="project">
+		<img class="project__image" src="/img/rogue.gif" alt="Game Screenshot" />
+		<h2 class="project__title">Retro Game</h2>
+		<p class="project__description">A Rogue-like game using ReactJs.</p>
+		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
+	</div>
+	<div class="project">
+		<img class="project__image" src="/img/heatmap.gif" alt="Game Screenshot" />
+		<h2 class="project__title">Heat Map</h2>
+		<p class="project__description">A Rogue-like game using ReactJs.</p>
+		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
+	</div>
+	<div class="project">
+		<img class="project__image" src="/img/tictactoe.gif" alt="Game Screenshot" />
+		<h2 class="project__title">Tic Tac Toe</h2>
+		<p class="project__description">A Rogue-like game using ReactJs.</p>
+		<p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/yJwGLy">CodePen</a>.</p>
+	</div>		
+</article>
+<article class="about">
+<h2 class="screen-reader-text">About</h2>
+	<p class="about__paragraph--one">Hello,</p>
+	<p>My name is <strong>Elise Straub</strong> from Washington, D.C., and I’m a <strong>web developer</strong> specializing in <strong>front-end</strong> development.  I can help make your website responsive, maintainable, and up to your standards. My <strong>skills</strong> include HTML5, CSS3, JavaScript, JQuery, SASS, React, and D3. </p>
+	<p>See my front-end projects at <a href="#">CodePen,</a> my full-stack projects on <a href="#">GitHub,</a> and view my learning path on <a href="#">FreeCodeCamp.</a></p>
+	<p>I am currently available for full-time positions. Want to hire me? I’d love to hear from you. <a href="#">Email</a> me, call my <a href="#">cellphone,</a> or check out my <a href="#">LinkedIn</a> profile.  Download a copy of my <a href="#">resume</a> if you need that too.</p>
+	<p>Thank you for visiting!</p>
+	<img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
+</article>
 </body>
 </html>

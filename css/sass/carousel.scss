@@ -1,0 +1,28 @@
+.carousel {
+	width: 100%;
+	background-color: $color__background;
+	margin: 0;
+	.project {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 2em 1em;
+		text-align: center;
+		border-bottom: 3px solid $color__primary; 
+		.project__title {
+			font-family: $font__serif;
+			font-size: em(24);
+			color: $color__primary--darker;
+		}
+		.project__image {
+			max-width: 100%;
+			height: auto;
+			border: 3px solid $color__primary;
+			border-radius: 20px;
+		}
+		.project__description {
+			font-family: $font__sans-serif;
+			font-size: em(18);
+			color: $color__text;
+		}
+	}
+}

@@ -1,68 +1,142 @@
-/*
-Error: File to import not found or unreadable: bootstrap-variables.
-       Load paths:
-         Compass::SpriteImporter
-         C:/Users/elise/Documents/GitHub/portfolio/css/sass
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/susy-2.1.3/sass
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/compass-normalize-1.5/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.2/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/html5-boilerplate-2.1.0/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/sassy-maps-0.4.0/sass
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/breakpoint-2.5.0/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/zurb-foundation-5.3.0/stylesheets
-         C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets
-        on line 2 of C:/Users/elise/Documents/GitHub/portfolio/css/sass/styles.sass
+@import "https://fonts.googleapis.com/css?family=Bitter|Raleway";
+/* ---------->>> VARIABLES <<<-----------*/
+/* ---------->>> GLOBAL <<<-----------*/
+body {
+  margin: 0;
+  min-width: 340px;
+}
 
-1: @import "bootstrap-compass"
-2: @import "bootstrap-variables"
-3: @import "bootstrap"
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
 
-Backtrace:
-C:/Users/elise/Documents/GitHub/portfolio/css/sass/styles.sass:2
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `import'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:64:in `import'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:36:in `css_import?'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-org/jruby/RubyArray.java:2412:in `map'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-org/jruby/RubyMethod.java:128:in `call'
-file:/C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
-org/jruby/RubyArray.java:1613:in `each'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
-org/jruby/RubyProc.java:271:in `call'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:252:in `on_change'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:290:in `initialize_adapter'
-org/jruby/RubyProc.java:271:in `call'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:297:in `start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap-variables.\A        Load paths:\A          Compass::SpriteImporter\A          C:/Users/elise/Documents/GitHub/portfolio/css/sass\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/susy-2.1.3/sass\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/compass-normalize-1.5/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.2/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/html5-boilerplate-2.1.0/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/sassy-maps-0.4.0/sass\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/breakpoint-2.5.0/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/zurb-foundation-5.3.0/stylesheets\A          C:/Users/elise/Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets\A         on line 2 of C:/Users/elise/Documents/GitHub/portfolio/css/sass/styles.sass\A \A 1: @import \"bootstrap-compass\"\A 2: @import \"bootstrap-variables\"\A 3: @import \"bootstrap\""; }
+/* ---------->>> HEADER <<<-----------*/
+header {
+  background-color: #333333;
+  color: #F2F2F2;
+  width: 100%;
+  height: 20vh;
+  min-height: 140px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+header .header__heading {
+  position: absolute;
+  margin-left: 1em;
+  top: 25%;
+  height: 50%;
+}
+header .header__heading h1 {
+  font-family: Bitter, Century, Georgia, Times, serif;
+  color: #B4D3DA;
+  font-size: 6vh;
+  margin: 0;
+}
+@media (max-height: 800px) {
+  header .header__heading h1 {
+    font-size: 48px;
+  }
+}
+header .header__heading p {
+  font-family: Raleway, Roboto, Arial, sans-serif;
+  color: #B4D3DA;
+  font-size: 3vh;
+  margin: 0;
+}
+@media (max-height: 800px) {
+  header .header__heading p {
+    font-size: 24px;
+  }
+}
+header button {
+  display: none;
+}
+@media (min-width: 600px) {
+  header button {
+    display: inherit;
+    background-color: #BA2C73;
+    color: #F2F2F2;
+    border: 3px solid #F2F2F2;
+    border-radius: 12px;
+    font-family: Bitter, Century, Georgia, Times, serif;
+    font-size: 6vh;
+    height: 50%;
+    position: absolute;
+    right: -15px;
+    top: 25%;
+    padding: 0 5vw 0 0.5em;
+  }
+}
+@media (min-width: 600px) and (max-height: 800px) {
+  header button {
+    font-size: 48px;
+  }
+}
+
+.carousel {
+  width: 100%;
+  background-color: #F2F2F2;
+  margin: 0;
+}
+.carousel .project {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2em 1em;
+  text-align: center;
+  border-bottom: 3px solid #B4D3DA;
+}
+.carousel .project .project__title {
+  font-family: Bitter, Century, Georgia, Times, serif;
+  font-size: 1.5em;
+  color: #5171A5;
+}
+.carousel .project .project__image {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #B4D3DA;
+  border-radius: 20px;
+}
+.carousel .project .project__description {
+  font-family: Raleway, Roboto, Arial, sans-serif;
+  font-size: 1.125em;
+  color: #333333;
+}
+
+.about {
+  background-color: #F2F2F2;
+  padding: 2em;
+  font-family: Raleway, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 2.5em;
+}
+.about a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #5171A5;
+  margin-right: .25em;
+}
+.about strong {
+  font-size: 1.5em;
+  color: #BA2C73;
+}
+.about p {
+  margin: 1.5em 0;
+}
+
+.about__paragraph--one {
+  font-size: 3em;
+  color: #BA2C73;
+}
+
+.about__headshot {
+  margin: 1em auto;
+  width: 66%;
+  max-width: 400px;
+  height: auto;
+  border: 3px solid #B4D3DA;
+}

@@ -1,0 +1,31 @@
+.about {
+	background-color: $color__background;
+	padding: 2em;
+	font-family: $font__sans-serif;
+	font-size: 1em;
+	line-height: 2.5em;
+	a {
+		font-size: 2em;
+		text-decoration: none;
+		color: $color__primary--darker;
+		margin-right: .25em;
+	}
+	strong {
+		font-size: 1.5em;
+		color: $color__accent;
+	}
+	p {
+	margin: 1.5em 0;
+	}
+}
+.about__paragraph--one {
+	font-size: 3em;
+	color: $color__accent;
+}
+.about__headshot {
+	margin: 1em auto;
+	width: 66%;
+	max-width: 400px;
+	height: auto;
+	border: 3px solid $color__primary;
+}
