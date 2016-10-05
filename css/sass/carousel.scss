@@ -1,39 +1,32 @@
 /* ---------->>> CAROUSEL <<<-----------*/ 
 
-.project {
-	padding: 2em 1em;
-	text-align: center;
-	border-bottom: 3px solid $color__primary; 
+.slide {
 	background-color: $color__background;
+	text-align: center;
 	h2 {
 		font-family: $font__serif;
-		font-size: em(40);
-		color: $color__primary--darker;
-		padding: 0 1em;
-		margin: 0;
-		line-height: 1em;
+		@include responsive-font(10vh, 18px);
+		color: $color__primary;
+	}
+	p {
+		font-family: $font__sans-serif;
+		@include responsive-font(5vh, 18px);
+		color: $color__text;
 	}
 	.project__title {
 		font-family: $font__serif;
-		@include responsive-font(4vh, 18px);
-		color: $color__primary--darker;
-		margin: .5em auto;
+		@include responsive-font(7vh, 18px);
+		color: $color__primary;
 	}
 	.project__image {
 		max-width: 90%;
 		border: 3px solid $color__primary;
 		border-radius: 20px;
 	}
-	.project__description {
-		font-family: $font__sans-serif;
-		@include responsive-font(3vh, 18px);
-		color: $color__text;
-		margin: auto 1.5em;
-	}
 	.project__link {
 		font-style: italic;
 		a {
-			color: $color__primary--darker;
+			color: $color__primary;
 			text-decoration: none;
 		}
 	}
@@ -45,7 +38,6 @@
 
 .fp-controlArrow.fp-next {
 	border-color: transparent transparent transparent $color__accent;
-
 }
 
 .fp-controlArrow.fp-prev {

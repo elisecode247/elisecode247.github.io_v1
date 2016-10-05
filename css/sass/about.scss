@@ -1,7 +1,6 @@
 .about {
-	background-color: white;
 	font-family: $font__sans-serif;
-	font-size: 1.5em;
+	@include responsive-font(2.5vh, 18px);
 	padding:1.5em;
 	@include break(900px){
 		padding: 0 4em;
@@ -18,17 +17,15 @@
 	.about__paragraph--one {
 		color: $color__accent;
 		font-family: $font__serif;
-		font-size: 3em;
-		line-height: 0em;
+		@include responsive-font(7.5vh, 18px);
 	}
 	.about__headshot {
-		display: none;
 		display: inherit;
-		border: 3px solid $color__primary;
-		border-radius: 50%;
-		width: 30%;
+		width: 20%;
 		max-width: 150px;
 		height: auto;
+		border: 3px solid $color__primary;
+		border-radius: 50%;
 	}
 }
 

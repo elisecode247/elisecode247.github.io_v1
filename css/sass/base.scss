@@ -1,23 +1,13 @@
-@import 'https://fonts.googleapis.com/css?family=Bitter|Raleway';
-
 /* ---------->>> VARIABLES <<<-----------*/ 
-$width__max:1024px;
-$width__min: 340px;
-$width__break: 720px;
-
 $color__background: #F2F2F2;
-$color__primary: #B4D3DA;
-$color__primary--darker: #5171A5;
+$color__primary: #5171A5;
+$color__primary--lighter: #5171A5;
 $color__accent: #BA2C73;
 $color__text: #333333;
 $font__serif: Bitter,Century,Georgia,Times,serif;
 $font__sans-serif: Raleway,Roboto,Arial,sans-serif;
 
 /* ---------->>> GLOBAL <<<-----------*/ 
-body {
-	margin: 0;
-	min-width: $width__min;
-}
 .screen-reader-text { 
 	clip: rect(1px, 1px, 1px, 1px); 
 	height: 1px; 

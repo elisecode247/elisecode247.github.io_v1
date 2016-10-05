@@ -1,11 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Bitter|Raleway";
 /* ---------->>> VARIABLES <<<-----------*/
 /* ---------->>> GLOBAL <<<-----------*/
-body {
-  margin: 0;
-  min-width: 340px;
-}
-
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -74,10 +68,10 @@ header .header__heading {
     color: #5171A5;
   }
   50% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   60% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   90% {
     color: #5171A5;
@@ -88,10 +82,10 @@ header .header__heading {
     color: #5171A5;
   }
   50% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   60% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   90% {
     color: #5171A5;
@@ -102,10 +96,10 @@ header .header__heading {
     color: #5171A5;
   }
   50% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   60% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   90% {
     color: #5171A5;
@@ -116,10 +110,10 @@ header .header__heading {
     color: #5171A5;
   }
   50% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   60% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   90% {
     color: #5171A5;
@@ -130,10 +124,10 @@ header .header__heading {
     color: #5171A5;
   }
   50% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   60% {
-    color: #B4D3DA;
+    color: #5171A5;
   }
   90% {
     color: #5171A5;
@@ -187,51 +181,49 @@ header .header__links {
 }
 
 /* ---------->>> CAROUSEL <<<-----------*/
-.project {
-  padding: 2em 1em;
-  text-align: center;
-  border-bottom: 3px solid #B4D3DA;
+.slide {
   background-color: #F2F2F2;
+  text-align: center;
 }
-.project h2 {
+.slide h2 {
   font-family: Bitter, Century, Georgia, Times, serif;
-  font-size: 2.5em;
+  font-size: 10vh;
   color: #5171A5;
-  padding: 0 1em;
-  margin: 0;
-  line-height: 1em;
 }
-.project .project__title {
-  font-family: Bitter, Century, Georgia, Times, serif;
-  font-size: 4vh;
-  color: #5171A5;
-  margin: .5em auto;
-}
-@media (max-height: 450px) {
-  .project .project__title {
+@media (max-height: 180px) {
+  .slide h2 {
     font-size: 18px;
   }
 }
-.project .project__image {
+.slide p {
+  font-family: Raleway, Roboto, Arial, sans-serif;
+  font-size: 5vh;
+  color: #333333;
+}
+@media (max-height: 360px) {
+  .slide p {
+    font-size: 18px;
+  }
+}
+.slide .project__title {
+  font-family: Bitter, Century, Georgia, Times, serif;
+  font-size: 7vh;
+  color: #5171A5;
+}
+@media (max-height: 257.14286px) {
+  .slide .project__title {
+    font-size: 18px;
+  }
+}
+.slide .project__image {
   max-width: 90%;
-  border: 3px solid #B4D3DA;
+  border: 3px solid #5171A5;
   border-radius: 20px;
 }
-.project .project__description {
-  font-family: Raleway, Roboto, Arial, sans-serif;
-  font-size: 3vh;
-  color: #333333;
-  margin: auto 1.5em;
-}
-@media (max-height: 600px) {
-  .project .project__description {
-    font-size: 18px;
-  }
-}
-.project .project__link {
+.slide .project__link {
   font-style: italic;
 }
-.project .project__link a {
+.slide .project__link a {
   color: #5171A5;
   text-decoration: none;
 }
@@ -253,11 +245,15 @@ header .header__links {
 }
 
 .about {
-  background-color: white;
   font-family: Raleway, Roboto, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 2.5vh;
   padding: 1.5em;
   line-height: 1.5em;
+}
+@media (max-height: 720px) {
+  .about {
+    font-size: 18px;
+  }
 }
 @media (min-width: 900px) {
   .about {
@@ -275,15 +271,18 @@ header .header__links {
 .about .about__paragraph--one {
   color: #BA2C73;
   font-family: Bitter, Century, Georgia, Times, serif;
-  font-size: 3em;
-  line-height: 0em;
+  font-size: 7.5vh;
+}
+@media (max-height: 240px) {
+  .about .about__paragraph--one {
+    font-size: 18px;
+  }
 }
 .about .about__headshot {
-  display: none;
   display: inherit;
-  border: 3px solid #B4D3DA;
-  border-radius: 50%;
-  width: 30%;
+  width: 20%;
   max-width: 150px;
   height: auto;
+  border: 3px solid #5171A5;
+  border-radius: 50%;
 }

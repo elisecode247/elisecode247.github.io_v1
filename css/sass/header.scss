@@ -14,13 +14,13 @@ header {
 		top: 25%;
 		height: 50%;
 		font-family: $font__serif;
-		color: $color__primary--darker;
+		color: $color__primary;
 		animation: 10s linear 0s normal none infinite colorshift;
 		@include keyframes(colorshift) {
-			0% {color:$color__primary--darker;}
-			50% {color:$color__primary;}
-			60% {color:$color__primary;}
-			90% {color:$color__primary--darker;}
+			0% {color:$color__primary;}
+			50% {color:$color__primary--lighter;}
+			60% {color:$color__primary--lighter;}
+			90% {color:$color__primary;}
 			}
 		h1 {
 			@include responsive-font(10vh, 48px);
