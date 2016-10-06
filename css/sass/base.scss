@@ -16,7 +16,7 @@ $font__sans-serif: Raleway,Roboto,Arial,sans-serif;
 	position: absolute !important;
 }
 
-@include keyframes(fadeIn){
+@keyframes fadeIn{
 	from {@include opacity(0)} 
 	to {@include opacity(1)}
 }

@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Elise Straub's web development portfolio. This website was created using Gulp, SASS, JQuery and FullPage.js.">
-  <meta name="keywords" content="HTML,CSS,JavaScript">
-  <meta name="author" content="Elise Straub">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elise Straub's Portfolio</title>
-  	<link rel="shortcut icon" href="img/favicon.ico" />
+	<meta charset="UTF-8">
+	<meta name="description" content="Elise Straub's web development portfolio. This website was created using Gulp, SASS, JQuery and FullPage.js.">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="Elise Straub">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" >
+	<link rel="stylesheet" type="text/css" href="./styles.css" >
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter%7CRaleway" >
   <title>Elise Straub's Portfolio</title>
 </head>
 <body class="fadeIn">
   <div id="fullpage" itemscope itemtype="http://schema.org/Person" role="main">
-    <header class="section">
-      <div class="header__heading">
-        <h1 class="fadeIn">Elise Straub</h1>
-        <p class="fadeIn"> web developer</p>
+    <header class="section" data-anchor="homePage">
+      <div class="header__container">
+        <h1 class="fadeIn header__heading">Elise Straub</h1>
+        <p class="fadeIn header__subheading"> web developer</p>
       </div>
       <div class="header__links">
         <a href="#carouselPage">Projects</a>
         <a href="#aboutPage">Hire</a>
       </div>
     </header>
-    <article class="carousel section" data-anchor="carouselPage">
+    <article class="section" data-anchor="carouselPage">
       <div class="slide">
-        <h2>Three <br/> Featured Projects</h2>
-        <p>&#129152; scroll left and right &#129154;</p><br/><br/>
+        <h2 class="carousel__heading">Three <br/> Featured Projects</h2>
+        <p>scroll or slide left and right</p><br/><br/>
       </div>
       <div class="slide">
         <img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
@@ -46,7 +48,7 @@
         <p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/KVXYbj/">CodePen</a></p>
       </div>
     </article>
-    <article class="about section" id="about" data-anchor="aboutPage">
+    <article class="section about" data-anchor="aboutPage">
       <h2 class="screen-reader-text">About</h2>
       <p class="about__paragraph--one">Hello,</p>
       <p>My name is <strong itemprop="name">Elise Straub</strong>, and I'm a <strong itemprop="jobTitle">web developer</strong> living in <span itemprop="homeLocation"> Washington, D.C. </span> and specializing in <strong>front-end</strong> development.
@@ -55,39 +57,20 @@
           itemprop="url">FreeCodeCamp.</a></p>
       <p>I am currently available for <span itemprop="seeks">full-time positions</span>. Want to hire me? I’d love to hear from you. <a id="email" itemprop="email">Email</a> me at "elisecode247 at gmail dot com", call me at <a href="tel:2029302165" itemprop="telephone">202-930-2165</a>.
         You can also view my <a href="https://www.linkedin.com/in/elisestraub/" itemprop="url">LinkedIn</a> profile or download a copy of my <a href="assets/elisestraubresume.pdf" download="elisestraubresume">resume</a>.</p>
-      <p>Thank you for visiting!</p>
-      <img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
+      <p>Thank you for visiting! <img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" /></p>
+ 
     </article>
   </div>
-	<noscript id="deferred-styles">
-		<link rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" />
-		<link rel="stylesheet" type="text/css" href="./css/stylesheets/styles.css">
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter%7CRaleway">
-	</noscript>
-	<script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="javascript_uglified/scrolloverflow.min.js"></script>
-	<script type="text/javascript" src="javascript_uglified/jquery.fullPage.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="uglyjavascript.js"></script>
 	<script>
 	$(document).ready(function() {
-	var myEmail = "elisecode247";
-	$('#fullpage').fullpage({
-	anchors:['homePage', 'carouselPage', 'aboutPage']
-	});
-	$('#email').attr('href', 'mailto:' + myEmail + '@gmail.com');
-	});
+		var myEmail = "elisecode247";
+		$('#fullpage').fullpage({
+		anchors:['homePage', 'carouselPage', 'aboutPage']
+		});
+		$('#email').attr('href', 'mailto:' + myEmail + '@gmail.com');
+		});
 	</script>
 </body>
 </html>

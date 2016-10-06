@@ -1,13 +1,13 @@
 /* ---------->>> CAROUSEL <<<-----------*/ 
-
+.carousel__heading {
+	font-family: $font__serif;
+	@include responsive-font(10vh, 18px);
+	color: $color__primary;
+}
 .slide {
 	background-color: $color__background;
 	text-align: center;
-	h2 {
-		font-family: $font__serif;
-		@include responsive-font(10vh, 18px);
-		color: $color__primary;
-	}
+
 	p {
 		font-family: $font__sans-serif;
 		@include responsive-font(5vh, 18px);
@@ -19,9 +19,12 @@
 		color: $color__primary;
 	}
 	.project__image {
-		max-width: 90%;
+		height: auto;
+		width: 90%;
+		max-width: 600px;
 		border: 3px solid $color__primary;
 		border-radius: 20px;
+		margin-top: 1em;
 	}
 	.project__link {
 		font-style: italic;

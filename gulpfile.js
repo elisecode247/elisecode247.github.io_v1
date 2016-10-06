@@ -9,7 +9,10 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	pump = require('pump');
 
-var jsSources = [];
+var jsSources = [
+  'javascript/scrolloverflow.min.js',
+  'javascript/jquery.fullPage.js'
+];
 
 gulp.task('log', function(){ 
 	gutil.log('Workflows are awesome');
@@ -28,7 +31,6 @@ gulp.task('compass',function(){
 			config_file: 'css/config.rb',
 			css: 'css/stylesheets',
 			sass: 'css/sass',
-			style: 'expanded'
 		}))
 		.on('error', gutil.log)
 		.pipe(gulp.dest('css/stylesheets'))
@@ -56,9 +58,10 @@ gulp.task('connect', function(){
 })
 
 gulp.task('compress', function () {
-	return gulp.src('javascript/*.js')
+	return gulp.src(jsSources)
 	.pipe(uglify())
-	.pipe(gulp.dest('javascript_uglified'))
+	.pipe(concat('uglyjavascript.js'))
+	.pipe(gulp.dest('./'))
 });
 
 gulp.task('default', ['connect', 'watch'])
