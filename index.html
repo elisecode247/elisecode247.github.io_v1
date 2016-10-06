@@ -7,9 +7,9 @@
 	<meta name="author" content="Elise Straub">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" >
-	<link rel="stylesheet" type="text/css" href="./styles.css" >
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter%7CRaleway" >
+	<link async rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" >
+	<link async rel="stylesheet" type="text/css" href="./styles.css" >
+	<link async rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter%7CRaleway" >
   <title>Elise Straub's Portfolio</title>
 </head>
 <body class="fadeIn">
@@ -26,8 +26,10 @@
     </header>
     <article class="section" data-anchor="carouselPage">
       <div class="slide">
+      <a class="arrow arrow--up" href="#homePage"></a>
         <h2 class="carousel__heading">Three <br/> Featured Projects</h2>
-        <p>scroll or slide left and right</p><br/><br/>
+        <p>scroll, swipe or click to move</p>
+        <a class="arrow arrow--down" href="#aboutPage"></a>
       </div>
       <div class="slide">
         <img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
@@ -44,7 +46,7 @@
       <div class="slide">
         <img class="project__image" src="img/tictactoe.gif" alt="Game Screenshot" />
         <h3 class="project__title">Tic Tac Toe</h3>
-        <p>Created using Angular 2, Bootstrap, jQuery, and a recursive algorithm</p>
+        <p>Created using Angular, Bootstrap, and jQuery</p>
         <p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/KVXYbj/">CodePen</a></p>
       </div>
     </article>

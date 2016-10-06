@@ -1,8 +1,10 @@
 /* ---------->>> CAROUSEL <<<-----------*/ 
 .carousel__heading {
 	font-family: $font__serif;
-	@include responsive-font(10vh, 18px);
+	@include responsive-font(8vh, 18px);
 	color: $color__primary;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 .slide {
 	background-color: $color__background;
@@ -10,12 +12,12 @@
 
 	p {
 		font-family: $font__sans-serif;
-		@include responsive-font(5vh, 18px);
+		@include responsive-font(4vh, 18px);
 		color: $color__text;
 	}
 	.project__title {
 		font-family: $font__serif;
-		@include responsive-font(7vh, 18px);
+		@include responsive-font(6vh, 18px);
 		color: $color__primary;
 	}
 	.project__image {
@@ -51,4 +53,27 @@
 	visibility: hidden;
 }
 
+
+.arrow {
+	display: inline-block;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    transform: translate3d(0,0,0);
+    border-style: solid;
+    opacity: .5;
+    border-width: 34px;
+    position: relative;
+    left: -5px;
+    margin: 1em auto;
+
+}
+
+.arrow--down {
+    border-color: #BA2C73 transparent transparent transparent;
+}
+
+.arrow--up {
+    border-color: transparent transparent #BA2C73 transparent;
+}
 
