@@ -28,24 +28,21 @@ header {
 	margin: 0;
 }	
 .header__links {
-	visibility: hidden;
-	@include break(20px){
-		visibility: visible;
-		position: absolute;
-		bottom: 1vh;
-		right: -8px;
-		a {
-			display: inherit;
-			opacity: .7;
-			margin: 1vh 0 0 0;
-			text-decoration: none;
-			background-color: $color__accent;
-			color: $color__background;
-			border-radius: 8px;
-			font-family: $font__serif;
-			@include responsive-font(3vw, 18px, 40px);
-			padding: 1vh 4vw 1vh 2vw;
-		}
+	visibility: visible;
+	position: absolute;
+	bottom: 15vh;
+	right: -8px;
+	a {
+		display: inherit;
+		opacity: .7;
+		margin: 1vh 0 0 0;
+		text-decoration: none;
+		background-color: $color__accent;
+		color: $color__background;
+		border-radius: 8px;
+		font-family: $font__serif;
+		@include responsive-font(3vw, 18px, 40px);
+		padding: 1vh 4vw 1vh 2vw;
 	}
 }
 
