@@ -23,6 +23,6 @@ $font__sans-serif: Raleway,Roboto,Arial,sans-serif;
 
 .fadeIn {
 	@include opacity(0);
-	animation: fadeIn 3s;
+	animation: fadeIn 2s .5s;
 	@include animation-fill-mode(forwards);
 }
