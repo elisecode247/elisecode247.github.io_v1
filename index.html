@@ -7,15 +7,14 @@
 	<meta name="author" content="Elise Straub">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" />
-	<link async rel="stylesheet" type="text/css" href="./css/stylesheets/jquery.fullPage.css" >
-	<link async rel="stylesheet" type="text/css" href="./styles.css" >
-	<link async rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter%7CRaleway" >
+	<link rel="stylesheet" type="text/css" href="css/stylesheets/styles.css" >
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter%7CRaleway">
   <title>Elise Straub's Portfolio</title>
 </head>
 <body class="fadeIn">
   <div id="fullpage" itemscope itemtype="http://schema.org/Person" role="main">
-    <header class="section" data-anchor="homePage">
-      <div class="header__container">
+    <header class="section fp-auto-height" data-anchor="homePage">
+      <div class="header__inner">
         <h1 class="fadeIn header__heading">Elise Straub</h1>
         <p class="fadeIn header__subheading"> web developer</p>
       </div>
@@ -26,10 +25,8 @@
     </header>
     <article class="section" data-anchor="carouselPage">
       <div class="slide">
-      <a class="arrow arrow--up" href="#homePage"></a>
         <h2 class="carousel__heading">Three <br/> Featured Projects</h2>
         <p>scroll, swipe or click to move</p>
-        <a class="arrow arrow--down" href="#aboutPage"></a>
       </div>
       <div class="slide">
         <img class="project__image" src="img/rogue.gif" alt="Game Screenshot" />
@@ -49,6 +46,8 @@
         <p>Created using Angular, Bootstrap, and jQuery</p>
         <p class="project__link">See source code at <a href="http://codepen.io/elisecode247/pen/KVXYbj/">CodePen</a></p>
       </div>
+      <a class="arrow arrow--up" href="#homePage"></a>
+      <a class="arrow arrow--down" href="#aboutPage"></a>
     </article>
     <article class="section about" data-anchor="aboutPage">
       <h2 class="screen-reader-text">About</h2>
@@ -59,7 +58,8 @@
           itemprop="url">FreeCodeCamp.</a></p>
       <p>I am currently available for <span itemprop="seeks">full-time positions</span>. Want to hire me? I’d love to hear from you. <a id="email" itemprop="email">Email</a> me at "elisecode247 at gmail dot com", call me at <a href="tel:2029302165" itemprop="telephone">202-930-2165</a>.
         You can also view my <a href="https://www.linkedin.com/in/elisestraub/" itemprop="url">LinkedIn</a> profile or download a copy of my <a href="assets/elisestraubresume.pdf" download="elisestraubresume">resume</a>.</p>
-      <p>Thank you for visiting! <img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" /></p>
+      <p>Thank you for visiting!</p>
+      <img class="about__headshot" src="img/myavatar.png" alt="Elise Straub's Headshot" />
  
     </article>
   </div>
@@ -67,6 +67,7 @@
 	<script type="text/javascript" src="uglyjavascript.js"></script>
 	<script>
 	$(document).ready(function() {
+
 		var myEmail = "elisecode247";
 		$('#fullpage').fullpage({
 		anchors:['homePage', 'carouselPage', 'aboutPage']

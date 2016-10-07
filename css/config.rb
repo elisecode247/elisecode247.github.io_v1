@@ -3,10 +3,10 @@ require 'compass/import-once/activate'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css/stylesheets"
-sass_dir = "css/sass"
-images_dir = "img"
-javascript_dir = ""
+css_dir = "stylesheets"
+sass_dir = "sass"
+images_dir = "../img"
+javascript_dir = "javascripts"
 relative_assets = true
 line_comments = true
 output_style = :compressed

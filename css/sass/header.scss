@@ -1,56 +1,50 @@
 /* ---------->>> HEADER <<<-----------*/ 
 header {
-	position: relative;
-	background-color: $color__text;
+	background-color: $color__background;
 	background: url("../../img/asanoha.png") 0 0 repeat;
-	animation: 15s linear 0s normal none infinite animate;
+	animation: 10s linear infinite animate;
 	@keyframes animate {
 		from {background-position:0 0;}
-		to {background-position: 0 347px;}
+		to {background-position: 400px 347px;}
 	}
 }
-.header__container {
-	position: absolute;
-	margin-left: 2em;
-	top: 25%;
-	height: 50%;
+.header__inner {
 	font-family: $font__serif;
-	color: $color__primary;
-	animation: 10s linear 0s normal none infinite colorshift;
+	color: $color__accent;
+	animation: 5s linear 0s 1 forwards colorshift;
+	margin: 5vh 0 5vh 5vw;
 	@keyframes colorshift {
-		0% {color:$color__primary;}
-		50% {color:$color__primary--lighter;}
-		60% {color:$color__primary--lighter;}
-		90% {color:$color__primary;}
+		0% {color:$color__accent;}
+		100% {color:$color__primary;}
 	}
 }
 .header__heading {
-	@include responsive-font(10vh, 48px);
+	@include responsive-font(7vw, 24px, 60px);
 	margin: 0;
 }
 
 .header__subheading {
-	@include responsive-font(5vh, 24px);
+	@include responsive-font(3vw, 18px, 40px);
 	margin: 0;
 }	
 .header__links {
-	display: none;
-	@include break(650px){
-		display: inherit;
+	visibility: hidden;
+	@include break(20px){
+		visibility: visible;
 		position: absolute;
-		bottom: 15%;
-		right: -12px;
+		bottom: 1vh;
+		right: -8px;
 		a {
 			display: inherit;
-			opacity: .5;
+			opacity: .7;
+			margin: 1vh 0 0 0;
 			text-decoration: none;
 			background-color: $color__accent;
 			color: $color__background;
-			border: 3px solid $color__background;
-			border-radius: 12px;
+			border-radius: 8px;
 			font-family: $font__serif;
-			@include responsive-font(7vh, 48px);
-			padding: 0 2em 0 1em;
+			@include responsive-font(3vw, 18px, 40px);
+			padding: 1vh 4vw 1vh 2vw;
 		}
 	}
 }

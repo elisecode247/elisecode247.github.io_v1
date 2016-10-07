@@ -1,28 +1,24 @@
 /* ---------->>> CAROUSEL <<<-----------*/ 
-.carousel__heading {
-	font-family: $font__serif;
-	@include responsive-font(8vh, 18px);
-	color: $color__primary;
-	margin: 0 auto;
-	padding: 0 auto;
-}
 .slide {
+	position: static;
 	background-color: $color__background;
 	text-align: center;
-
+	line-height: 1;
 	p {
 		font-family: $font__sans-serif;
 		@include responsive-font(4vh, 18px);
 		color: $color__text;
+		margin: 5vh 15vw;
 	}
 	.project__title {
 		font-family: $font__serif;
 		@include responsive-font(6vh, 18px);
 		color: $color__primary;
+		margin: 5vh 15vw;
 	}
 	.project__image {
 		height: auto;
-		width: 90%;
+		width: 50%;
 		max-width: 600px;
 		border: 3px solid $color__primary;
 		border-radius: 20px;
@@ -37,15 +33,25 @@
 	}
 }
 
+.carousel__heading {
+	margin: 5vh 15vw;
+	font-family: $font__serif;
+	@include responsive-font(8vh, 18px, 48px);
+	color: $color__primary;
+}
+
 .fp-controlArrow {
-	opacity: .5;
+	opacity: .3;
+
 }
 
 .fp-controlArrow.fp-next {
+	right: 0;
 	border-color: transparent transparent transparent $color__accent;
 }
 
 .fp-controlArrow.fp-prev {
+	left: 0;
 	border-color: transparent $color__accent transparent transparent;
 }
 
@@ -55,25 +61,30 @@
 
 
 .arrow {
-	display: inline-block;
+	display: block;
     cursor: pointer;
     width: 0;
     height: 0;
-    transform: translate3d(0,0,0);
+    margin: 0 auto;
+    padding: 0;
+    border-width: 1em;
     border-style: solid;
-    opacity: .5;
-    border-width: 34px;
-    position: relative;
-    left: -5px;
-    margin: 1em auto;
-
-}
-
-.arrow--down {
-    border-color: #BA2C73 transparent transparent transparent;
+    opacity: .3;
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    margin: 0 -1em;
 }
 
 .arrow--up {
+	top: -1em;
     border-color: transparent transparent #BA2C73 transparent;
 }
+
+.arrow--down {
+	bottom: -1em;
+    border-color: #BA2C73 transparent transparent transparent;
+
+}
+
 

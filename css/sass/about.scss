@@ -1,12 +1,9 @@
 /* ---------->>> ABOUT <<<-----------*/
 .about {
 	font-family: $font__sans-serif;
-	@include responsive-font(2.5vh, 18px);
-	padding:0 1.5em;
-	@include break(900px){
-		padding: 0 4em;
-	}
-	line-height: 1.5em;
+	@include responsive-font(2vw, 18px, 30px);
+	padding:3vh 3vw 3vh 3vw;
+	line-height: 1.5;
 	a {
 		font-style: italic;
 		color: $color__accent;
@@ -18,17 +15,16 @@
 	.about__paragraph--one {
 		color: $color__accent;
 		font-family: $font__serif;
-		@include responsive-font(7.5vh, 18px);
-		line-height: 0;
+		@include responsive-font(4vw, 24px, 60px);
+		margin: 1vh 0;
 	}
 	.about__headshot {
-		width: 20%;
-		max-width: 150px;
+		width: 100%;
 		height: auto;
+		min-width: 64px;
+		max-width: 150px;
 		border: 3px solid $color__primary;
 		border-radius: 50%;
-		float: right;
-		margin-right: 1em;
 	}
 }
 

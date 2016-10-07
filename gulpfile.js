@@ -22,7 +22,7 @@ gulp.task('js',function(){
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
 		.pipe(browserify)
-		.pipe(gulp.dest('builds/development/js'))
+		.pipe(gulp.dest('builds/development/js'))              
 });
 
 gulp.task('compass',function(){
@@ -30,7 +30,7 @@ gulp.task('compass',function(){
 		.pipe(compass({
 			config_file: 'css/config.rb',
 			css: 'css/stylesheets',
-			sass: 'css/sass',
+			sass: 'css/sass'
 		}))
 		.on('error', gutil.log)
 		.pipe(gulp.dest('css/stylesheets'))
