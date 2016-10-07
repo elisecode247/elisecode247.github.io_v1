@@ -25,12 +25,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elisecode247/portfolio.git"
+    "url": "https://github.com/elisecode247/elisecode247.github.io.git"
   },
   "author": "Elise Straub",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/elisecode247/portfolio/issues"
-  },
-  "homepage": "https://github.com/elisecode247/portfolio#readme"
 }
